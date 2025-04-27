@@ -9,8 +9,7 @@ const Dashboard = () => {
 
   const getData = async () => {
     try {
-      // const res = await axiosService.get("/users");
-      const res = []
+      const res = await axiosService.get("/users");
       if (res.status === 200) {
         setUsers(res.data);
         setLoading(false);
